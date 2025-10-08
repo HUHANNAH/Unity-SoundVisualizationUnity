@@ -7,41 +7,36 @@
 ![项目截图](Screenshots/main_scene.png)
 
 ---
+## 技术信息
 
+- **开发环境**：Unity6 URP
+- **平台**：WebGL  
+---
 ## 功能介绍
 
 **实时声音交互**  
    - 打开麦克风权限，对着麦克风出声：  
      - 猴头模型随声音变形  
      - 底部圆圈随声音扩张  
-     - 光源位置变化，使自制材质高光跟随音量变化  
+     - 光源位置随声音变化，使自制材质实现美妙的光影变化  
 ---
 
 ## 使用说明
 
 - GitHub 上只上传了：
-  - 控制声音可视化实现的 **C# 脚本**  
-  - WebGL 麦克风插件（MIT 授权，可免费使用）  
-- **未上传**：
-  - 场景文件、模型文件、Shader 文件  
-- 想获取 Shader 或完整资源？欢迎通过邮箱联系我：2943433577@qq.com
-
-> 友情提示：这个项目是我的课程作业，中间放了我的大学校徽。屏幕前的家人们如果有需要，也可以联系我，提出你的想法，我们可以换徽章、换模型、丰富背景~
-
----
+  - 控制声音可视化实现的C# 脚本  
+  - 本项目中使用的 WebGL 麦克风插件
+- **还未上传**：
+  - 模型文件、材质文件  
+- 材质文件会上传的，主播照着大神的思路研究了很久才做出来这个材质，想过一阵可能在b站上更新具体制作流程视频的同时再上传shader和贴图，顺便和大家分享一下思路啥的，等我身体好一点的……咳咳
+- 模型用的就是blender的苏珊娜，大家自己整一个应该也很容易，所以就没放在这里了。
+- 普通大学生的普通作业，做的不是很好也发出来了，见谅见谅。
 
 ## 致谢
 
-- 感谢 [YouTube 教学视频](https://www.youtube.com/watch?v=uwCjzUTpR1E) 提供的 FFT 分析原始思路  
-- Shader 制作灵感参考 [StylizedPaintShaderbreakdown](https://cyn-prod.com/stylized-paint-shader-breakdown) 博客，目前我在unity中使用纯shader+图片终于复刻成功了大约 30% 的效果，就已经把我迷的五迷三道了，非常漂亮，佩服大神  
+- 本项目使用的 WebGL Microphone 插件来自 [github.com/someuser/WebGLMicrophone](https://github.com/someuser/WebGLMicrophone)，遵循 MIT License。
+- 感谢 [YouTube 教学视频](https://www.youtube.com/watch?v=uwCjzUTpR1E) 提供的unity声音可视化教学和FrequencyBandAnalyser脚本，你们真是大好人
+- Shader 制作灵感参考 [StylizedPaintShaderbreakdown](https://cyn-prod.com/stylized-paint-shader-breakdown) 博客，目前我在unity中使用纯shader+贴图终于复刻成功了大约 30% 的效果，就已经把我迷的五迷三道了，非常漂亮，佩服大神  
 
 ---
 
-## 技术信息
-
-- **开发环境**：Unity6 urp
-- **平台**：WebGL  
-- **核心技术**：FFT 音频分析、自制 Shader、WebGL 麦克风交互  
-- **未来改进**：计划加入更多材质变化、互动模型和光效优化  
-
----
